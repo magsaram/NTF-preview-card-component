@@ -10,25 +10,45 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href=".css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
     <main>
-      <div>
-        <img src="./images/image-equilibrium.jpg" alt="equilibrium" />
-        <h1>Equilibrium #3429</h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <p class="eht">
-          <img src="./images/icon-ethereum.svg" alt="ethereum" /> 0.041 ETH
-        </p>
-        <p class="time">
-          <img src="./images/icon-clock.svg" alt="clock" /> 3 days left
-        </p>
-      </div>
-      <div>
-        <img src="./images/image-avatar.png" alt="Jules Wyvern" />
-        <p>Creation of <span>Jules Wyvern</span></p>
+      <div class="background">
+        <div class="wrapper">
+          <div>
+            <img
+              class="equi"
+              src="./images/image-equilibrium.jpg"
+              alt="equilibrium"
+            />
+            <h1>Equilibrium #3429</h1>
+            <p class="offer">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <p class="eth">
+              <img src="./images/icon-ethereum.svg" alt="ethereum" />
+              <span class="ethblue">0.041 ETH</span>
+              <img
+                class="clocktime"
+                src="./images/icon-clock.svg"
+                alt="clock"
+              />
+              <span class="time">3 days left</span>
+            </p>
+          </div>
+          <div class="author">
+            <img src="./images/image-avatar.png" alt="Jules Wyvern" />
+            <p>Creation of <span>Jules Wyvern</span></p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -36,7 +56,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/magsaram">magsaram</a>.
       </div>
     </footer>
   </body>
