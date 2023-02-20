@@ -4,14 +4,13 @@
 }
 body {
   width: 100%;
-  /* height: 100%; */
   background-color: hsl(217, 54%, 11%);
   font-family: "Outfit", sans-serif;
 }
 .background {
   background-color: hsl(216, 50%, 16%);
   position: relative;
-  top: 50vh;
+  top: 45vh;
   left: 50vw;
   width: 327px;
   height: 543px;
@@ -19,17 +18,43 @@ body {
   border-radius: 15px;
 }
 .wrapper {
-  margin-top: 24px;
-  margin-left: 24px;
+  position: relative;
+  padding-top: 24px;
+  margin-left: 25px;
   width: 278px;
   height: 495px;
 }
+.equi-all {
+  position: relative;
+}
+.equicyan {
+  position: absolute;
+  background-color: cyan;
+  width: 276px;
+  height: 276px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
 .equi {
+  position: absolute;
   width: 278px;
   height: 278px;
   border-radius: 8px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.view {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 114px;
+  left: 114px;
+  opacity: 0;
+}
+.texts {
+  position: absolute;
+  margin-top: 300px;
 }
 h1 {
   font-size: 22px;
@@ -99,4 +124,20 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+@media (min-width: 600px) {
+  h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+  .author p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+  .equi:hover {
+    opacity: 0.5;
+  }
+  .equi:hover + .view {
+    opacity: 1;
+  }
 }
