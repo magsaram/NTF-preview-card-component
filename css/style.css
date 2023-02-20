@@ -136,8 +136,11 @@ footer a {
   }
   .equi:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
-  .equi:hover + .view {
+  .equi:hover + .view,
+  .view:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
