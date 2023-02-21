@@ -44,6 +44,7 @@ body {
   margin-bottom: 25px;
   margin-left: -1px;
   margin-top: -1px;
+  transition: 0.3s;
 }
 .view {
   position: absolute;
